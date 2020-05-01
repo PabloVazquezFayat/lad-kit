@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 const orderSchema = new Schema({
     owner: {type: mongoose.Schema.Types.ObjectId, ref: 'User'},
-    meals: [{type:  mongoose.Schema.Types.ObjectId, ref: 'Meal'}],
+    meals: [{type: mongoose.Schema.Types.ObjectId, ref: 'Meal'}],
     pickupDateAndTime: {type: String},
     placedDateAndTime: {type: String}
 });
