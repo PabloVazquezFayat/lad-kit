@@ -1,3 +1,35 @@
 <div class="navbar-container">
-    <h1>NAVBAR</h1>
+
+    <div class="navbar-info-container">
+
+        {{#if data.navbar.phone}}
+            <a href="tel:{{data.navbar.phone}}">{{data.navbar.phone}}</a>
+        {{/if}}
+
+        {{#if data.navbar.email}}
+            <a href="tel:{{data.navbar.email}}">{{data.navbar.email}}</a>
+        {{/if}}
+
+        {{#if data.navbar.address}}
+            <a href="tel:{{data.navbar.address}}">{{data.navbar.address}}</a>
+        {{/if}}
+
+    </div>
+
+    <div class="navbar-interactions-container">
+
+        <div class="navbar-logo-container">
+
+        </div>
+
+        <div class="navbar-page-links-container">
+
+        </div>
+
+        <div class="navbar-cart-actions-container">
+
+        </div>
+
+    </div>
+    
 </div>
