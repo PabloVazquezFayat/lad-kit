@@ -2,17 +2,56 @@
 
     <div class="navbar-info-container">
 
-        {{#if data.navbar.phone}}
-            <a href="tel:{{data.navbar.phone}}">{{data.navbar.phone}}</a>
-        {{/if}}
+        <div class="navbar-info-links-container">
+            {{#if data.navbar.phone}}
+                <a class="navbar-info-link" href="tel:{{data.navbar.phone}}">
+                    <i class="fas fa-mobile-alt fa-lg"></i>
+                    {{data.navbar.phone}}
+                </a>
+            {{/if}}
 
-        {{#if data.navbar.email}}
-            <a href="tel:{{data.navbar.email}}">{{data.navbar.email}}</a>
-        {{/if}}
+            {{#if data.navbar.email}}
+                <a class="navbar-info-link" href="{{data.navbar.email}}">
+                    <i class="far fa-envelope fa-lg"></i>
+                    {{data.navbar.email}}
+                </a>
+            {{/if}}
 
-        {{#if data.navbar.address}}
-            <a href="tel:{{data.navbar.address}}">{{data.navbar.address}}</a>
-        {{/if}}
+            {{#if data.navbar.address}}
+                <a class="navbar-info-link" href="{{data.navbar.address}}">
+                    <i class="fas fa-map-marker-alt fa-lg"></i>
+                    {{data.navbar.address}}
+                </a>
+            {{/if}}
+        </div>
+
+        <div class="navbar-sm-links-container">
+            <p>Follow us: </p>
+
+            {{#if data.navbar.facebook}}
+                <a class="navbar-sm-link" href="{{data.navbar.facebook}}">
+                    <i class="fab fa-facebook-f fa-lg"></i>
+                </a>
+            {{/if}}
+
+            {{#if data.navbar.twitter}}
+                <a class="navbar-sm-link" href="{{data.navbar.twitter}}">
+                    <i class="fab fa-twitter fa-lg"></i>
+                </a>
+            {{/if}}
+
+            {{#if data.navbar.pinterest}}
+                <a class="navbar-sm-link" href="{{data.navbar.pinterest}}">
+                    <i class="fab fa-pinterest-p fa-lg"></i>
+                </a>
+            {{/if}}
+
+            {{#if data.navbar.instagram}}
+                <a class="navbar-sm-link" href="{{data.navbar.instagram}}">
+                    <i class="fab fa-instagram fa-lg"></i>
+                </a>
+            {{/if}}
+        </div>
 
     </div>
 
