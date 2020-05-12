@@ -4,3 +4,12 @@
     height: 450px;
     float: left;
 }
+
+.dish-tile{
+    width: 370px;
+    height: 630px;
+    border-radius: 3px;
+    box-shadow: 0px 3px 10px 0px rgba(168,168,168,1);   
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(168,168,168,1);
+    -moz-box-shadow: 0px 3px 10px 0px rgba(168,168,168,1);
+}

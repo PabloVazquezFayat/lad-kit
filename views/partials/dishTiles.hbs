@@ -1,3 +1,9 @@
 <div class="dish-tiles-container">
-     <h1>DISH TILES</h1>
+     <p>{{data.dishTiles.paragraph}}</p>
+     <h1>{{data.dishTiles.header}}</h1>
+     <ul class="dish-tiles">
+          {{#each data.dishTiles}}
+               <li>{{this}}</li>
+          {{/each}}
+     </ul>
 </div>

@@ -1,12 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+:root{
+  --red: #e9161d;
+}
+
 body {
   padding: 0px;
   margin: 0px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
+a{
   color: #00B7FF;
+}
+
+.cta{
+    background: red;
+    padding: 15px 25px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
 }
