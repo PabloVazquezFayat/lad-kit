@@ -1,9 +1,11 @@
 <div class="dish-tiles-container">
-     <p>{{data.dishTiles.paragraph}}</p>
-     <h1>{{data.dishTiles.header}}</h1>
+     <div class="dish-tiles-header-container">
+          <p>{{data.dishTilesComponent.paragraph}}</p>
+          <h1>{{data.dishTilesComponent.header}}</h1>
+     </div>
      <ul class="dish-tiles">
           {{#each data.dishTiles}}
-               <li>{{this}}</li>
+               <li class="dish-tile">{{this.name}}</li>
           {{/each}}
      </ul>
 </div>

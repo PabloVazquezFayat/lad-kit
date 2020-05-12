@@ -20,6 +20,20 @@ const items = [
         kind: "protein"
     },
     {
+        name: "fish",
+        imageURL: "/images/fish-1.jpg",
+        price: 3,
+        available: true,
+        kind: "protein"
+    },
+    {
+        name: "rice",
+        imageURL: "/images/rice-2.jpg",
+        price: 3,
+        available: true,
+        kind: "side",
+    },
+    {
         name: "black beans",
         imageURL: "/images/black-beans-1.jpg",
         price: 3,
