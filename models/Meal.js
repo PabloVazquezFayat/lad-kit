@@ -8,6 +8,7 @@ const mealSchema = new Schema({
     veggies: [{type: mongoose.Schema.Types.ObjectId, ref: 'Item'}],
     feature: {type: Boolean},
     priority: {type: Number},
+    popular: {type: String},
     basePrice: {type: Number},
 });
 

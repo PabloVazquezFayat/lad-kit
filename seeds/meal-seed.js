@@ -22,6 +22,7 @@ const meals = [
         feature: true,
         priority: 1,
         basePrice: 7.0,
+        popular: 'Most Popular'
     },
     {
         name: 'Fish Meal',

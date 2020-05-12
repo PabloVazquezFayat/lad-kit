@@ -5,7 +5,14 @@
      </div>
      <ul class="dish-tiles">
           {{#each data.dishTiles}}
-               <li class="dish-tile">{{this.name}}</li>
+               <li class="dish-tile">
+                    {{this.name}}
+                    {{#if this.popular}}
+                         <div class="test">
+                              {{this.popular}}
+                         </div>
+                    {{/if}}
+               </li>
           {{/each}}
      </ul>
 </div>

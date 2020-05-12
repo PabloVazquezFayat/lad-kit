@@ -51,3 +51,9 @@
     -webkit-box-shadow: 0px 3px 10px 0px rgba(168,168,168,1);
     -moz-box-shadow: 0px 3px 10px 0px rgba(168,168,168,1);
 }
+
+.test{
+    background: red;
+    width: 50px;
+    height: 10px
+}
