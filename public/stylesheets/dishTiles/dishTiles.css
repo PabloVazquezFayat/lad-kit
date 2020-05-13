@@ -50,34 +50,44 @@
     box-shadow: 0px 3px 10px 0px rgba(168,168,168,1);   
     -webkit-box-shadow: 0px 3px 10px 0px rgba(168,168,168,1);
     -moz-box-shadow: 0px 3px 10px 0px rgba(168,168,168,1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .test{
-    background: red;
+    background-attachment: red;
     width: 50px;
     height: 10px
 }
 
 .dish-tile-image-container{
-    background: green;
+    background: green; 
     width: 100%;
-    height: auto;
+    height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0px 0px 30px 0px;
 }
 
 .dish-image-container{
-    background: red;
-    width: 250px;
-    height: auto;
+    background: red; 
+    width: 200px;
+    height: 200px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .dish-image-container img{
-    width: 250px;
-    height: auto;
+    width: 305px;
+    height: 205px;
+    margin: 0px 0px 0px 72px;
 }
