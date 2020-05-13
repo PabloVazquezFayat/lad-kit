@@ -1,6 +1,7 @@
 const Navbar = require('../../models/Navbar');
 const HeroBanner = require('../../models/HeroBanner');
 const Meal = require('../../models/Meal');
+const Item = require('../../models/Item');
 const DishTiles = require('../../models/DishTiles');
 
 module.exports = async (req, res, next)=>{
@@ -10,7 +11,11 @@ module.exports = async (req, res, next)=>{
         const navbar = await Navbar.findOne();
         const heroBanner = await HeroBanner.findOne();
 
-        const meals = await Meal.find({feature: true}).populate({path: 'item', select: 'name'});
+        const meals = await Meal.find({feature: true})
+            .populate({path: 'protein', select: 'name'})
+            .populate({path: 'sides', select: 'name'})
+            .populate({path: 'veggies', select: 'name'});
+
         const dishTiles =  meals.sort((a, b)=> a.priority - b.priority);
 
         const dishTilesComponent = await DishTiles.findOne();

@@ -15,9 +15,21 @@
                     <h2>{{this.name}}</h2>
                     <h1>{{this.basePrice}}</h1>
                     <ul>
-                         <li>{{this.protein}}</li>
-                         <li>{{this.sides}}</li>
-                         <li>{{this.veggies}}</li>
+                         <li>{{this.protein.name}}</li>
+                         <li>
+                              <ul>
+                                   {{#each this.sides}}
+                                        <li>{{this.name}}</li>
+                                   {{/each}}
+                              </ul>
+                         </li>
+                         <li>
+                              <ul>
+                                   {{#each this.veggies}}
+                                        <li>{{this.name}}</li>
+                                   {{/each}}
+                              </ul>
+                         </li>
                     </ul>
                     <div>
                          <img src="" alt="">
