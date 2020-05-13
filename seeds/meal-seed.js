@@ -13,6 +13,8 @@ const meals = [
         feature: true,
         priority: 0,
         basePrice: 7.0,
+        popular: '',
+        imageURL: '/images/dish-3.jpg',
     },
     {
         name: 'Beefy Meal',
@@ -22,7 +24,8 @@ const meals = [
         feature: true,
         priority: 1,
         basePrice: 7.0,
-        popular: 'Most Popular'
+        popular: 'Most Popular',
+        imageURL: '/images/dish-3.jpg',
     },
     {
         name: 'Fish Meal',
@@ -32,6 +35,8 @@ const meals = [
         feature: true,
         priority: 2,
         basePrice: 7.0,
+        popular: '',
+        imageURL: '/images/dish-3.jpg',
     }
 ];
   

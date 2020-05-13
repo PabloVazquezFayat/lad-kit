@@ -10,6 +10,7 @@ const mealSchema = new Schema({
     priority: {type: Number},
     popular: {type: String},
     basePrice: {type: Number},
+    imageURL: {type: String},
 });
 
 const Meal = mongoose.model('Meal', mealSchema);

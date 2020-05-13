@@ -31,11 +31,15 @@
                               </ul>
                          </li>
                     </ul>
-                    <div>
-                         <img src="" alt="">
+                    <div class="dish-tile-image-container">
+                        {{#if this.imageURL}}
+                              <div class="dish-image-container">
+                                   {{!-- <img src="{{this.imageURL}}" alt="image"> --}}
+                              </div>
+                        {{/if}}
                     </div>
                     <div>
-                         <a href="">Order Now</a>
+                         <a class='cta' href="/order/{{this._id}}">Order Now</a>
                     </div>
                </li>
           {{/each}}
