@@ -6,12 +6,25 @@
      <ul class="dish-tiles">
           {{#each data.dishTiles}}
                <li class="dish-tile">
-                    {{this.name}}
                     {{#if this.popular}}
                          <div class="test">
                               {{this.popular}}
                          </div>
                     {{/if}}
+
+                    <h2>{{this.name}}</h2>
+                    <h1>{{this.basePrice}}</h1>
+                    <ul>
+                         <li>{{this.protein}}</li>
+                         <li>{{this.sides}}</li>
+                         <li>{{this.veggies}}</li>
+                    </ul>
+                    <div>
+                         <img src="" alt="">
+                    </div>
+                    <div>
+                         <a href="">Order Now</a>
+                    </div>
                </li>
           {{/each}}
      </ul>

@@ -10,7 +10,7 @@ module.exports = async (req, res, next)=>{
         const navbar = await Navbar.findOne();
         const heroBanner = await HeroBanner.findOne();
 
-        const meals = await Meal.find({feature: true});
+        const meals = await Meal.find({feature: true}).populate({path: 'item', select: 'name'});
         const dishTiles =  meals.sort((a, b)=> a.priority - b.priority);
 
         const dishTilesComponent = await DishTiles.findOne();
