@@ -6,31 +6,30 @@
      <ul class="dish-tiles">
           {{#each data.dishTiles}}
                <li class="dish-tile">
-                    {{#if this.popular}}
-                         <div class="test">
-                              {{this.popular}}
-                         </div>
-                    {{/if}}
+                    <div class='most-popular-container'>
+                         {{#if this.popular}}
+                              <div class="most-popular">
+                                   {{this.popular}}
+                              </div>
+                         {{/if}}
+                    </div>
 
                     <h2>{{this.name}}</h2>
-                    <h1>{{this.basePrice}}</h1>
-                    <ul>
-                         <li>{{this.protein.name}}</li>
-                         <li>
-                              <ul>
-                                   {{#each this.sides}}
-                                        <li>{{this.name}}</li>
-                                   {{/each}}
-                              </ul>
-                         </li>
-                         <li>
-                              <ul>
-                                   {{#each this.veggies}}
-                                        <li>{{this.name}}</li>
-                                   {{/each}}
-                              </ul>
-                         </li>
-                    </ul>
+                    <h1>${{this.basePrice}}</h1>
+
+                    <div>
+                         <p>
+                              {{this.protein.name}}, 
+                              {{#each this.sides}}
+                                   {{this.name}},
+                              {{/each}}
+                              <br>
+                              {{#each this.veggies}}
+                                   {{this.name}},
+                              {{/each}}
+                         </p>
+                    </div>
+
                     <div class="dish-tile-image-container">
                         {{#if this.imageURL}}
                               <div class="dish-image-container">
@@ -38,9 +37,11 @@
                               </div>
                         {{/if}}
                     </div>
-                    <div>
+
+                    <div class="dish-tile-cta-container">
                          <a class='cta' href="/order/{{this._id}}">Order Now</a>
                     </div>
+                    
                </li>
           {{/each}}
      </ul>
