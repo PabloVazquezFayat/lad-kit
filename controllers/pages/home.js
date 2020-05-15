@@ -3,6 +3,7 @@ const HeroBanner = require('../../models/HeroBanner');
 const Meal = require('../../models/Meal');
 const Item = require('../../models/Item');
 const DishTiles = require('../../models/DishTiles');
+const Subscribe = require('../../models/Subscribe');
 
 module.exports = async (req, res, next)=>{
 
@@ -17,14 +18,16 @@ module.exports = async (req, res, next)=>{
             .populate({path: 'veggies', select: 'name'});
 
         const dishTiles =  meals.sort((a, b)=> a.priority - b.priority);
-
         const dishTilesComponent = await DishTiles.findOne();
+
+        const subscribe = await Subscribe.findOne();
 
         const data = {
             navbar: navbar,
             heroBanner: heroBanner,
             dishTiles: dishTiles,
-            dishTilesComponent: dishTilesComponent
+            dishTilesComponent: dishTilesComponent,
+            subscribe: subscribe,
         }
 
         console.log(data);
