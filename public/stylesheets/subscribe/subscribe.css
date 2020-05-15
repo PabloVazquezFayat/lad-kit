@@ -48,7 +48,7 @@
     height: 25px;
     padding: 14px;
     border-radius: 75px;
-    border: solid 1px var(--blueGray);
+    border: solid 2px var(--blueGray);
     font-size: 18px;
     font-family: 'Kaushan Script', cursive;
     font-weight: 300;
@@ -67,7 +67,7 @@
 .subscribe-container form button{
     background: var(--red); 
     width: 125px;
-    height: 48px;
+    height: 49px;
     margin: 0px 0px 0px -129px;
     border-radius: 75px;
     border: none;

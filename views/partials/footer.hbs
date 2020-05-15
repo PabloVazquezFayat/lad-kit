@@ -1,3 +1,24 @@
-<div class="footer-container">
-    <h1>FOOTER</h1>
+<div class="footer-container" style="background-image: url({{data.footer.backgroundImage}});">
+    <ul>
+        <li>
+            <i class="fas fa-map-marker-alt fa-5x"></i>
+            <h3>{{data.footer.address.header}}</h3>
+            <p>{{data.footer.address.paragraph}}</p>
+        </li>
+        <li>
+            <i class="fas fa-calendar-week fa-5x"></i>
+            <h3>{{data.footer.hours.header}}</h3>
+            <p>{{data.footer.hours.week}}</p>
+            <p>{{data.footer.hours.weekend}}</p>
+        </li>
+        <li>
+            <i class="fas fa-address-card fa-5x"></i>
+            <h3>{{data.footer.contact.header}}</h3>
+            <a href="mailto: {{data.footer.contact.email}}">{{data.footer.contact.email}}</a>
+            <a href="tel:{{data.footer.contact.phone}}">{{data.footer.contact.phone}}</a>
+        </li>
+    </ul>
+    <div class="footer-copyright-container">
+        <p>&copy; {{data.footer.copyright}}</p>
+    </div>
 </div>

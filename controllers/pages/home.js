@@ -4,6 +4,7 @@ const Meal = require('../../models/Meal');
 const Item = require('../../models/Item');
 const DishTiles = require('../../models/DishTiles');
 const Subscribe = require('../../models/Subscribe');
+const Footer = require('../../models/Footer');
 
 module.exports = async (req, res, next)=>{
 
@@ -21,6 +22,7 @@ module.exports = async (req, res, next)=>{
         const dishTilesComponent = await DishTiles.findOne();
 
         const subscribe = await Subscribe.findOne();
+        const footer = await Footer.findOne();
 
         const data = {
             navbar: navbar,
@@ -28,6 +30,7 @@ module.exports = async (req, res, next)=>{
             dishTiles: dishTiles,
             dishTilesComponent: dishTilesComponent,
             subscribe: subscribe,
+            footer: footer,
         }
 
         console.log(data);
