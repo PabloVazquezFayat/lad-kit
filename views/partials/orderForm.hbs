@@ -1,3 +1,40 @@
 <div class='order-form-container'>
-    <h1>ORDER FORM</h1>
+    <form action="order" method='POST'>
+
+        <input class="input" type="text" name="name" id="order-name" placeholder="Name" required="true">
+
+        <input class="input" type="email" name="email" id="order-email" placeholder="Email" required="true">
+
+        <input class="input" type="tel" name="phone" id="order-phone" placeholder="Phone number" required="true">
+
+        <input class="input" type="date" name="pickup-date" id="order-pickup-date" required="true">
+
+        <select class="input" name="pickup-time" id="order-pick-time" required="true">
+
+            <option value="" selected>Select pickup time</option>
+
+            <option value="12:00PM">12:00PM</option>
+            <option value="12:30PM">12:30PM</option>
+
+            <option value="01:00PM">01:00PM</option>
+            <option value="01:30PM">01:30PM</option>
+
+            <option value="02:00PM">02:00PM</option>
+            <option value="02:30PM">02:30PM</option>
+
+            <option value="03:00PM">02:00PM</option>
+            <option value="03:30PM">02:30PM</option>
+
+            <option value="04:00PM">02:00PM</option>
+            <option value="04:30PM">02:30PM</option>
+
+            <option value="05:00PM">02:00PM</option>
+            <option value="05:30PM">02:30PM</option>
+
+            <option value="06:00PM">02:00PM</option>
+            <option value="06:30PM">02:30PM</option>
+
+        </select>
+
+    </form>
 </div>

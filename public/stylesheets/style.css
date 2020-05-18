@@ -29,3 +29,47 @@ a{
     text-decoration: none;
     text-transform: capitalize;
 }
+
+.input{
+  background: white;
+  width: 100%;
+  padding: 10px 0px;
+  margin: 0px 0px 20px 0px;
+  border: none;
+  border-radius: 0px;
+  border-bottom: solid 1px var(--red);
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--blueGray);
+}
+
+.input::placeholder{
+  opacity: 1;
+  font-size: 14px;
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--blueGray);
+}
+
+.input::-webkit-placeholder{
+  opacity: 1;
+  font-size: 14px;
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--blueGray);
+}
+
+.input::-moz-placeholder{
+  opacity: 1;
+  font-size: 14px;
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--blueGray);
+}
+
+select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+

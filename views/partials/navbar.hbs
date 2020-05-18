@@ -58,15 +58,26 @@
     <div class="navbar-interactions-container">
 
         <div class="navbar-logo-container">
+            <div class="navbar-logo-wrapper">
+                {{#if data.navbar.logoImage}}
+                    <img src="{{data.navbar.logoImage}}" alt="logo">
+                {{/if}}
+                {{#if data.navbar.logoText}}
+                    <h1>{{data.navbar.logoText}}</h1>
+                {{/if}}
+            </div>
 
-        </div>
-
-        <div class="navbar-page-links-container">
-
+            <ul class="navbar-page-links-container">
+                {{#each data.navbar.pageLinks}}
+                    <li><a href="{{this.url}}">{{this.name}}</a></li>
+                {{/each}}
+            </ul>
         </div>
 
         <div class="navbar-cart-actions-container">
-
+           <div class="cart-button-container">
+               <a href="/cart"><i class="fas fa-shopping-bag fa-lg"></i></a>
+           </div>
         </div>
 
     </div>
