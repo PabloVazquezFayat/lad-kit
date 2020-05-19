@@ -1,40 +1,75 @@
 <div class='order-form-container'>
-    <form action="order" method='POST'>
+    <div class="order-form-wrapper">
+        <form action="order" method='POST'>
 
-        <input class="input" type="text" name="name" id="order-name" placeholder="Name" required="true">
+            <div class="order-form-info-container">
+                <input class="input" type="text" name="name" id="order-name" placeholder="Name" required="true">
+                <input class="input" type="email" name="email" id="order-email" placeholder="Email" required="true">
+                <input class="input" type="tel" name="phone" id="order-phone" placeholder="Phone number" required="true">
+                <input class="input" type="date" name="pickup-date" id="order-pickup-date" required="true">
+                <select class="input" name="pickup-time" id="order-pick-time" required="true">
+                    <option value="" selected>Select pickup time</option>
+                    <option value="12:00PM">12:00PM</option>
+                    <option value="12:30PM">12:30PM</option>
+                    <option value="01:00PM">01:00PM</option>
+                    <option value="01:30PM">01:30PM</option>
+                    <option value="02:00PM">02:00PM</option>
+                    <option value="02:30PM">02:30PM</option>
+                    <option value="03:00PM">02:00PM</option>
+                    <option value="03:30PM">02:30PM</option>
+                    <option value="04:00PM">02:00PM</option>
+                    <option value="04:30PM">02:30PM</option>
+                    <option value="05:00PM">02:00PM</option>
+                    <option value="05:30PM">02:30PM</option>
+                    <option value="06:00PM">02:00PM</option>
+                    <option value="06:30PM">02:30PM</option>
+                </select>
+            </div>
 
-        <input class="input" type="email" name="email" id="order-email" placeholder="Email" required="true">
+            <div class="order-form-menu-items-container">
 
-        <input class="input" type="tel" name="phone" id="order-phone" placeholder="Phone number" required="true">
+                <div class="proteins items-menu">
+                    <h3>Proteins:</h3>
+                    <ul class="protein-item-container">
+                        {{#each data.proteins}}
+                            <li>
+                                <p>{{this.name}}</p>
+                                <input type="checkbox">
+                            </li>
+                        {{/each}}
+                    </ul>
+                </div>
 
-        <input class="input" type="date" name="pickup-date" id="order-pickup-date" required="true">
+                <div class="sides items-menu">
+                    <h3>Sides:</h3>
+                    <ul class="sides-item-container">
+                        {{#each data.sides}}
+                            <li>
+                                <p>{{this.name}}</p>
+                                <input type="checkbox">
+                            </li>
+                        {{/each}}
+                    </ul>
+                </div>
 
-        <select class="input" name="pickup-time" id="order-pick-time" required="true">
+                <div class="veggies items-menu">
+                    <h3>Veggies:</h3>
+                    <ul class="veggies-item-container">
+                        {{#each data.veggies}}
+                            <li>
+                                <p>{{this.name}}</p>
+                                <input type="checkbox">
+                            </li>
+                        {{/each}}
+                    </ul>
+                </div>
 
-            <option value="" selected>Select pickup time</option>
+            </div>
 
-            <option value="12:00PM">12:00PM</option>
-            <option value="12:30PM">12:30PM</option>
+            <div class="order-form-order-container">
 
-            <option value="01:00PM">01:00PM</option>
-            <option value="01:30PM">01:30PM</option>
+            </div>
 
-            <option value="02:00PM">02:00PM</option>
-            <option value="02:30PM">02:30PM</option>
-
-            <option value="03:00PM">02:00PM</option>
-            <option value="03:30PM">02:30PM</option>
-
-            <option value="04:00PM">02:00PM</option>
-            <option value="04:30PM">02:30PM</option>
-
-            <option value="05:00PM">02:00PM</option>
-            <option value="05:30PM">02:30PM</option>
-
-            <option value="06:00PM">02:00PM</option>
-            <option value="06:30PM">02:30PM</option>
-
-        </select>
-
-    </form>
+        </form>
+    </div>
 </div>

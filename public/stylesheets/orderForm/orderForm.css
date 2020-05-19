@@ -1,20 +1,91 @@
 .order-form-container{
     /* background: orange; */
     width: 100%;
-    height: 500px;
+    height: auto;
     float: left;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 50px 0px;
+}
+
+.order-form-wrapper{
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
 }
 
 .order-form-container form{
-    /* background: blue; */
-    width: 50%;
-    height: 450px;
+    background: white;
+    width: 60%;
+    height: auto;
     padding: 15px;
     border-radius: 3px;
     box-shadow: 0px 3px 10px 0px rgba(168,168,168,1);   
     -webkit-box-shadow: 0px 3px 10px 0px rgba(168,168,168,1);
     -moz-box-shadow: 0px 3px 10px 0px rgba(168,168,168,1);   
+}
+
+.order-form-menu-items-container{
+    /* background: blue; */
+    margin: 20px 0px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.items-menu{
+    /* background: red; */
+    width: auto;
+}
+
+.items-menu h3{
+    /* background: green; */
+    padding: 0px;
+    margin: 0px;
+    color: var(--blueGray);
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Rubik', sans-serif;
+}
+
+.items-menu ul{
+    /* background: violet; */
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5px 0px;
+    padding: 0px;
+}
+
+.items-menu ul li{
+    background: var(--red);
+    list-style: none;
+    margin: 5px 10px 5px 0px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    color: #fff;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.items-menu ul li p{
+    margin: 0px 4px 0px 0px;
+    padding: 0px;
+}
+
+.items-menu ul li label{
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 4px;
+    padding: 0px;
+}
+
+.items-menu ul li label i{
+    margin: 0px 4px;   
 }

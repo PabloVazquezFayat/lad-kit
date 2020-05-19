@@ -18,6 +18,11 @@ module.exports = async (req, res, next)=>{
             .populate({path: 'sides', select: 'name'})
             .populate({path: 'veggies', select: 'name'});
 
+        const items = await Item.find();
+        const proteins = items.filter((item)=> item.kind === "protein" && item.available === true);
+        const sides = items.filter((item)=> item.kind === 'side' && item.available === true);
+        const veggies = items.filter((item)=> item.kind === 'veggie' && item.available === true);
+
         const dishTiles =  meals.sort((a, b)=> a.priority - b.priority);
         const dishTilesComponent = await DishTiles.findOne();
 
@@ -31,6 +36,9 @@ module.exports = async (req, res, next)=>{
             dishTilesComponent: dishTilesComponent,
             subscribe: subscribe,
             footer: footer,
+            proteins: proteins,
+            sides: sides,
+            veggies: veggies,
         }
 
         console.log(data);

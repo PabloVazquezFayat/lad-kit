@@ -39,6 +39,8 @@ a{
   border-radius: 0px;
   border-bottom: solid 1px var(--red);
   font-size: 14px;
+  font-weight: 300;
+  font-family: 'Rubik', sans-serif;
   text-decoration: none;
   color: var(--blueGray);
 }
@@ -46,7 +48,8 @@ a{
 .input::placeholder{
   opacity: 1;
   font-size: 14px;
-  font-size: 14px;
+  font-weight: 300;
+  font-family: 'Rubik', sans-serif;
   text-decoration: none;
   color: var(--blueGray);
 }
@@ -54,7 +57,8 @@ a{
 .input::-webkit-placeholder{
   opacity: 1;
   font-size: 14px;
-  font-size: 14px;
+  font-weight: 300;
+  font-family: 'Rubik', sans-serif;
   text-decoration: none;
   color: var(--blueGray);
 }
@@ -62,7 +66,8 @@ a{
 .input::-moz-placeholder{
   opacity: 1;
   font-size: 14px;
-  font-size: 14px;
+  font-weight: 300;
+  font-family: 'Rubik', sans-serif;
   text-decoration: none;
   color: var(--blueGray);
 }
@@ -71,5 +76,7 @@ select{
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  font-weight: 300;
+  font-family: 'Rubik', sans-serif;
 }
 

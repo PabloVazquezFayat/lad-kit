@@ -1,9 +1,13 @@
 .dish-tiles-container{
-    background: white;
+    /* background: red; */
     width: 100%;
     height: auto;
     padding: 50px 0px 100px 0px;
     float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .dish-tiles-header-container{
@@ -35,7 +39,9 @@
 }
 
 .dish-tiles{
-    /* background: red; */
+    /* background: purple; */
+    width: 100%;
+    padding: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
